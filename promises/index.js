@@ -18,7 +18,7 @@ var p = new promise.Promise(function(resolve, reject) {
 });
 
 p.then(function(result) {
-	console.log(result.text); // "Stuff worked!"
+	console.log("\n### rest call result: \n\n\t%s\n", result.text); // "Stuff worked!"
 }, function(err) {
 	console.log(err); // Error: "It broke"
 });
