@@ -1,0 +1,20 @@
+{
+  "name": "lrn-promises",
+  "version": "0.0.0",
+  "description": "Learning promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "promises",
+    "es6-promises",
+    "node.js"
+  ],
+  "author": "Wayne Kenneth Seymour III",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "es6-promise": "~0.1.0",
+    "superagent": "~0.15.7"
+  }
+}
