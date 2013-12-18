@@ -12,3 +12,9 @@ var p = new promise.Promise(function(resolve, reject) {
     reject(Error("It broke"));
   }
 });
+
+p.then(function(result) {
+  console.log(result); // "Stuff worked!"
+}, function(err) {
+  console.log(err); // Error: "It broke"
+});
