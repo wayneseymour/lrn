@@ -19,7 +19,7 @@ var p = new promise.Promise(function(resolve, reject) {
 		});
 
 });
-
+// eric
 p.then(function(result) {
 	console.log("\n### rest call result: \n\n\t%s\n", result.text); // "Stuff worked!"
 }, function(err) {
