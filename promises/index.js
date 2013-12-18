@@ -4,9 +4,12 @@ var request = require('superagent');
 
 var p = new promise.Promise(function(resolve, reject) {
 	// do a thing, possibly async, then…
-
+    var url = 'http://jsonip.com';
+    
+    console.log("\n### executing rest call to: \n\n\t'%s'", url);
+    
 	request
-		.get('http://jsonip.com')
+		.get(url)
 		.end(function(res) {
 			if (res) {
 				resolve(res);
