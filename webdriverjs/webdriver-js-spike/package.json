@@ -15,6 +15,7 @@
   "author": "Wayne K. Seymour III",
   "license": "MIT",
   "dependencies": {
-    "selenium-webdriver": "~2.39.0"
+    "selenium-webdriver": "~2.39.0",
+    "mocha": "~1.16.2"
   }
 }
