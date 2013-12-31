@@ -5,8 +5,8 @@ var driver = new webdriver.Builder().
    build();
 
 driver.get('http://www.google.com');
-driver.findElement(webdriver.By.name('q')).sendKeys('webdriver');
-driver.findElement(webdriver.By.name('btnG')).click();
+driver.findElement(By.name('q')).sendKeys('webdriver');
+driver.findElement(By.name('btnG')).click();
 driver.wait(function() {
  return driver.getTitle().then(function(title) {
    return title === 'webdriver - Google Search';

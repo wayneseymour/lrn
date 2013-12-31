@@ -1,0 +1,25 @@
+{
+  "name": "mocha-chai-webdriverjs-spike",
+  "version": "0.1.0",
+  "description": "Researching how I'm going to functionally test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webdriverjs",
+    "mocha",
+    "chai",
+    "nodejs",
+    "node",
+    "functional-test"
+  ],
+  "author": "Wayne K. Seymour III",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.16.2",
+    "webdriverjs": "~1.0.6",
+    "phantomjs": "~1.9.2-6"
+  }
+}

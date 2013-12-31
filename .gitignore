@@ -2,3 +2,5 @@ node_modules
 /grunt/node-cli-spike/nbproject/private/
 /promises/nbproject/private/
 /promises/nbproject/
+bower_components
+chromedriver

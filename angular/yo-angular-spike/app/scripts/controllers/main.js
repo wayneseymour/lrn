@@ -6,5 +6,6 @@ angular.module('yoAngularSpikeApp')
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
+      
     ];
   });
