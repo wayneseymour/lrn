@@ -1,45 +1,72 @@
 var promise = require('es6-promise');
 var request = require('superagent');
 
+function get(url) {
 
-var p = new promise.Promise(function(resolve, reject) {
-	// do a thing, possibly async, then…
-	var url = 'http://jsonip.com/post/google';
-// 	var url = 'http://jsonip.com';
+  return new promise.Promise(function(resolve, reject) {
 
-	console.log("\n### executing rest call to: \n\n\t'%s'", url);
+    console.log("\n### getting url: \n\n\t%s", url);
 
-	if (url.indexOf("google") !== -1) {
-		request
-			.post(url)
-			.set('Accept', 'application/json')
-			.end(function(res) {
-				if (res) {
-					resolve(res);
-				} else {
-					reject(Error("It broke"));
-				}
-			});
-	}
-	request
-		.get(url)
-		.end(function(res) {
-			if (res) {
-				resolve(res);
-			} else {
-				reject(Error("It broke"));
-			}
-		});
+    request
+      .get(url)
+      .end(function(err, res) {
+        if (res) {
+          resolve(res);
+        } else {
+          reject(new Error(err));
+        }
+      });
 
-});
+  });
+}
 
-p.then(function(result) {
-	console.log("\n### rest call result: \n\n\t%s\n", result.text); // "Stuff worked!"
-}, function(err) {
-	console.log(err); // Error: "It broke"
-});
+function post(url, body) {
 
-p.
-catch (function(o) {
-	console.log("### o: ", o);
-});
+  return new promise.Promise(function(resolve, reject) {
+
+    console.log("\n### posting to url: \n\n\t%s", url);
+
+    request
+      .post(url)
+      .send(body)
+      .end(function(err, res) {
+        if (res) {
+          resolve(res);
+        } else {
+          reject(new Error(err));
+        }
+      });
+
+  });
+}
+(function(url) {
+  get(url)
+    .then(function(response) {
+      return response.text;
+    })
+    .then(function(text) {
+      console.log("\n### response.text: \n\t%s", text);
+
+      return post(url);
+    })
+    .
+  catch (function(err) {
+    console.log("Failed!", err);
+  })
+    .then(function(response) {
+      console.log("\n### response.text: \n%s", response.text);
+      return post(url + '/some-post-url');
+    })
+    .then(function(response) {
+      console.log("\n### response.text: \n%s", response.text);
+      return response;
+    })
+    .
+  catch (function(err) {
+    console.log("Failed!", err);
+  })
+    .then(function(response) {
+
+    });
+
+})('http://jsonip.com');
