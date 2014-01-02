@@ -1,20 +1,28 @@
 {
   "name": "lrn-promises",
   "version": "0.0.0",
-  "description": "Learning promises",
-  "main": "index.js",
+  "description": "Just trying to learn promises.",
+  "main": "es6-promises.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wayneseymour/js.git"
+  },
   "keywords": [
     "promises",
-    "es6-promises",
-    "node.js"
+    "nodejs",
+    "node",
+    "js"
   ],
   "author": "Wayne Kenneth Seymour III",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wayneseymour/js/issues"
+  },
   "dependencies": {
-    "es6-promise": "~0.1.0",
-    "superagent": "~0.15.7"
+    "superagent": "~0.15.7",
+    "es6-promise": "~0.1.0"
   }
 }
