@@ -26,6 +26,7 @@ function get(url) {
 catch (function (err) {
     console.log("\n### Failed!", err);
 }).then(function (responses) {
+    console.log('\n### responses: ', responses);
     responses.forEach(function (response) {
         console.log('\n### response.text: ', response.text);
     });
