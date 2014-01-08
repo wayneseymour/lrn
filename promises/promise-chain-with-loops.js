@@ -10,7 +10,13 @@ var request = require('superagent');
 function get(url) {
     return new promise.Promise(function (resolve, reject) {
         console.log("\n### executing rest call to: \n\n\t%s", url);
-        request.get(url).end(function (err, res) {
+        request
+        .get(url)
+        .on('error', function(err) { 
+            console.log('\n### handling onError()');
+            resolve({err: err, url: url});
+        })
+        .end(function (err, res) {
             if (res) resolve({res: res, url: url});
             if (err) resolve({err: err, url: url});
         });
@@ -26,8 +32,8 @@ catch (function (err) {
 }).then(function (responses) {
     // console.log('\n### responses: ', responses);
     responses.forEach(function (response) {
-        if(response) console.log('\n### success: ', response.url); 
-        if(response && response.err) console.log('\n### failure, response.err: ', response.err); 
+        if(response) console.log('\n### success, url[%s]', response.url); 
+        if(response && response.err) console.log('\n### failure: \n\turl[%s] | err[%s]', response.url, response.err); 
         
     });
 });
