@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo 'some text' | ./index.js --red"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wayneseymour/lrn.git"
+  },
   "keywords": [
     "pipe",
     "stream",
