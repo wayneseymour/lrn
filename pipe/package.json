@@ -1,0 +1,19 @@
+{
+  "name": "pipe",
+  "version": "0.0.0",
+  "description": "Unix style piping in Node.js research.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'some text' | ./index.js --red"
+  },
+  "keywords": [
+    "pipe",
+    "stream",
+    "stdout"
+  ],
+  "author": "W.K. Seymour III",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "~2.1.0"
+  }
+}
