@@ -1,0 +1,14 @@
+{
+  "name": "webdriver.io",
+  "version": "0.0.0",
+  "description": "Learning http://webdriver.io/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverjs": "~1.3.0"
+  }
+}
