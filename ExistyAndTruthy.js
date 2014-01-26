@@ -11,3 +11,9 @@ existy({}.notHere); //=> false
 existy((function(){})()); //=> false
 existy(0); //=> true
 existy(false); //=> true
+
+
+truthy(false); //=> false
+truthy(undefined); //=> false
+truthy(0); //=> true
+truthy(''); //=> true
