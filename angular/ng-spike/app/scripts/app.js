@@ -12,6 +12,10 @@ angular.module('ngSpikeApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/text', {
+        templateUrl: 'views/text.html',
+        controller: 'TextCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
