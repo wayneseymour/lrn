@@ -2,7 +2,7 @@
 
 angular.module('ngSpikeApp')
   .controller('TextCtrl', function ($scope) {
-    $scope.awesomeThings = [
+    $scope.friends = [
       'Benny',
       'Brian',
       'Cesar'
