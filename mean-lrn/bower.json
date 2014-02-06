@@ -1,0 +1,41 @@
+{
+	"name": "mean-lrn",
+	"version": "0.0.0",
+	"homepage": "https://github.com/wayneseymour/mean-lrn",
+	"authors": [
+		"Wayne Kenneth Seymou III wayneseymour@gmail.com"
+	],
+	"description": "Learning FullStack JS with MEAN",
+	"keywords": [
+		"mean-seed",
+		"javascript",
+		"angular",
+		"node",
+		"myproject",
+		"app"
+	],
+	"dependencies": {
+		"angular": "1.2.5",
+		"angular-animate": "1.2.5",
+		"angular-sanitize": "1.2.5",
+		"angular-touch": "1.2.5",
+		"angular-route": "1.2.5",
+		"angular-cookies": "1.2.5",
+		"lesshat": "latest",
+		"font-awesome": "latest",
+		"less-flexbox": "latest",
+		"momentjs": "latest",
+		"hammerjs": "latest",
+		"angular-hammer": "latest",
+		"angular-string": "latest",
+		"angular-array": "latest",
+		"angular-facebook-auth": "latest",
+		"angular-google-auth": "latest",
+		"angular-forminput": "latest",
+		"angular-socket-io": "latest"
+	},
+	"license": "MIT",
+	"resolutions": {
+		"angular": "1.2.5"
+	}
+}
