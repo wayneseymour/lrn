@@ -1,11 +1,11 @@
 {
-	"name": "mean-lrn",
+	"name": "myproject",
 	"version": "0.0.0",
-	"homepage": "https://github.com/wayneseymour/mean-lrn",
+	"homepage": "https://github.com//myproject",
 	"authors": [
-		"Wayne Kenneth Seymou III wayneseymour@gmail.com"
+		""
 	],
-	"description": "Learning FullStack JS with MEAN",
+	"description": "My really cool app!",
 	"keywords": [
 		"mean-seed",
 		"javascript",

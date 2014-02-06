@@ -1,9 +1,9 @@
 {
-	"author": "Wayne Kenneth Seymou III wayneseymour@gmail.com",
-	"name": "mean-lrn",
+	"author": "",
+	"name": "myproject",
 	"version": "0.0.0",
-	"description": "Learning FullStack JS with MEAN",
-	"homepage": "https://github.com/wayneseymour/mean-lrn",
+	"description": "My really cool app!",
+	"homepage": "https://github.com//myproject",
 	"dependencies": {
 		"rpc.js": "~0.4.3",
 		"express": "~3.1.2",

@@ -8,15 +8,15 @@
 	"operatingSystemComment":"One of: 'windows', 'mac', 'linux'",
 	"forever": 0,
 	"app": {
-		"name": "mean-lrn",
-		"title": "Learning FullStack JS "
+		"name": "myproject",
+		"title": "My Project"
 	},
 	"platform":"",
 	"server": {
 		"domain": "localhost",
-		"port": 4005,
+		"port": 3005,
 		"httpsPort": 443,
-		"socketPort": 4006,
+		"socketPort": 3006,
 		"serverPath": "/",
 		"appPath": "/",
 		"staticFilePath": "/src/",
@@ -78,7 +78,7 @@
 		"addresses": {
 			"noReply": "noreply"
 		},
-		"from": "admin@mean-lrn.com",
+		"from": "admin@myproject.com",
 		"from_name": "Admin TEST",
 		"mandrillApiKey": "8X-1bNRWtA4rbneppkqahw",
 		"mandrillApiKeyComment":"Make sure to CHANGE this!"

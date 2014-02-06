@@ -1,4 +1,4 @@
-# mean-lrn
+# myproject
 
 ## Demo
 - [Website](http://198.199.118.44:3000/)

@@ -1,8 +1,8 @@
 {
-    "name": "mean-lrn",
-    "description": "Learning FullStack JS with MEAN",
+    "name": "myproject",
+    "description": "My really cool app!",
     "version": "0.0.0",
-    "url": "https://github.com/wayneseymour/mean-lrn",
+    "url": "https://github.com//myproject",
     "options": {
         "paths": ".",
         "outdir": "yuidocs/backend",
