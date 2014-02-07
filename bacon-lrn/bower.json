@@ -1,0 +1,9 @@
+{
+  "name": "bacon-lrn",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "bacon": "~0.7.2"
+  },
+  "devDependencies": {}
+}
