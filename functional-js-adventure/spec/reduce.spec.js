@@ -14,6 +14,6 @@ describe("Functional javascript reduce fn.", function() {
 				'Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian'
 			];
 
-			expect(countWords(inputWords)).toBe(expected);
+			expect(countWords(inputWords)).toEqual(expected);
 		});
 });
