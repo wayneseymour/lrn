@@ -1,7 +1,10 @@
+// http://flippinawesome.org/2014/02/10/replacing-callbacks-with-es6-generators/
+
 function* ticketGenerator() {
-  yield 1;
-  yield 2;
-  yield 3;
+  for(var i=0; true; i++) {
+    var reset = yield i;
+    if(reset) { i = -1; }
+  }
 }
 
 var takeANumber = ticketGenerator();
