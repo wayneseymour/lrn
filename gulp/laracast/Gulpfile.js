@@ -4,7 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('css', function () {
 	return gulp.src('css/main.css')
-		.pipe(autoprefixer())
+		.pipe(autoprefixer('last 15 version'))
 		.pipe(minifycss())
 		.pipe(gulp.dest('css/min'));
 });
@@ -15,5 +15,5 @@ gulp.task('default', function() {
 
 	gulp.watch('css/*.css', function() {
 		gulp.run('css');
-	})
-})
+	});
+});
