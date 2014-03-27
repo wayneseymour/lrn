@@ -4,15 +4,17 @@
 <head>
           <title>AngularJS Tutorials</title>
           <link rel="stylesheet" href="vendor/foundation/foundation.min.css">
+          <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
 
           <div ng-app="">
-                    <input type="text" ng-model="data.message">
-                    <h1>{{data.message + " world"}}</h1>
-                    <div class="{{data.message}}">
-                              Wrap me in a foundation component
+                    <div ng-controller="FirstCtrl">
+                              <h1>{{data.message + " world"}}</h1>
+                              <div class="{{data.message}}">
+                                        Wrap me in a foundation component
+                              </div>
                     </div>
           </div>
 

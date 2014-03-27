@@ -1,4 +1,4 @@
-# Firspt HumanJS App
+# First HumanJS App
 
 This app was generated with the [humanjs cli tool](http://docs.humanjavascript.com).
 
