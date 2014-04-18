@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="todoApp">
 
 <head>
   <title>AngularJS Tutorials</title>
   <link rel="stylesheet" href="../vendor/foundation/css/foundation.min.css">
-  <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
 
-  <div ng-app="">
-    <div ng-controller="FirstCtrl">
+  <div>
+    <div ng-controller="FirstController">
       <h1>{{data.message + " world"}}</h1>
       <div class="{{data.message}}">
         Wrap me in a foundation component
       </div>
     </div>
   </div>
+  <div ng-controller="GoodbyeController">
+    <p>fromService: {{fromService}}</p>
+    <p>fromFactory: {{fromFactory}}</p>
+</div>
 
   <script type="text/javascript" src="../vendor/angular/angular.js"></script>
+
+  <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
