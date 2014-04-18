@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', ['ui.router']);
+        // For Component users, it should look like this:
+        // var myApp = angular.module('myApp', [require('angular-ui-router')]);
+myApp.config(function($stateProvider, $urlRouterProvider) {
+  //
+  // For any unmatched url, redirect to /state1
+  $urlRouterProvider.otherwise("/state1");
+  //
+  // Now set up the states
+  $stateProvider
+    .state('state1', {
+      url: "/state1",
+      templateUrl: "partials/state1.html"
+    })
+    .state('state1.list', {
+      url: "/list",
+      templateUrl: "partials/state1.list.html",
+      controller: function($scope) {
+        $scope.items = ["A", "List", "Of", "Items"];
+      }
+    })
+    .state('state2', {
+      url: "/state2",
+      templateUrl: "partials/state2.html"
+    })
+    .state('state2.list', {
+      url: "/list",
+        templateUrl: "partials/state2.list.html",
+        controller: function($scope) {
+          $scope.things = ["A", "Set", "Of", "Things"];
+        }
+      })
+    });
+    </script>
+</head>
+<body>
+    <div ui-view></div>
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+</body>
+</body>
+</html>
