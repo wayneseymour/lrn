@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grokking Scope</title>
+</head>
+<script>
+  var WorldCtrl = function($scope) {
+    $scope.population = 7000;
+    $scope.countries = [{
+      name: 'France',
+      population: 63.1
+    }, {
+      name: 'United Kingdom',
+      population: 61.8
+    }, ];
+  };
+</script>
+
+<body ng-app="">
+
+
+  <ul ng-controller="WorldCtrl">
+    <li ng-repeat="country in countries">
+      {{country.name}} has population of {{country.population}}</li>
+    <hr>World's population: {{population}} millions
+  </ul>
+
+  <script src="./bower_components/angular/angular.min.js"></script>
+</body>
+
+</html>

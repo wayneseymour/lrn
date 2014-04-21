@@ -1,0 +1,9 @@
+{
+  "name": "bower-lrn",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "polymer": "~0.2.0"
+  },
+  "devDependencies": {}
+}

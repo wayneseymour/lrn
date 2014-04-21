@@ -1,0 +1,17 @@
+{
+  "name": "lazy.js-lrn",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wayneseymour/lrn",
+  "authors": [
+    "Wayne Kenneth Seymour III <wayneseymour@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
