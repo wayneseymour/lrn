@@ -1,10 +1,11 @@
+'use strict';
 function wrapElements(a) {
 
   var result = [];
   for (var i = 0, n = a.length; i < n; i++) {
-    (function(j) {
+    //(function(j) {
       result[i] = function() { return a[j]; };
-    })(i);
+    //})(i);
   }
   return result;
 }

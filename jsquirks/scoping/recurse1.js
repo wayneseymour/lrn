@@ -1,4 +1,7 @@
+'use strict';
+
 var f = function find(tree, key) {
+
   if (!tree) {
     return null;
   }
@@ -8,3 +11,5 @@ var f = function find(tree, key) {
   return find(tree.left, key) ||
     find(tree.right, key);
 };
+
+f();
