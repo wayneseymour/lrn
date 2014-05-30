@@ -20,6 +20,6 @@ gulp.task('default', function() {
     .pipe(concat('all.js'))
     .pipe(rev())
     .pipe(uglify())
-    .pipe(sourcemaps.write('maps'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'));
 });
