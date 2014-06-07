@@ -2,11 +2,11 @@
 'use strict';
 
 var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rev = require('gulp-rev');
-var sourcemaps = require('gulp-sourcemaps');
 var clean = require('gulp-clean');
+var rev = require('gulp-rev');
+//var concat = require('gulp-concat');
+var concat = require('gulp-concat-sourcemap');
+var uglify = require('gulp-uglify');
 
 gulp.task('clean', function() {
   return gulp.src('dist/*', {
@@ -16,10 +16,11 @@ gulp.task('clean', function() {
 
 gulp.task('default', function() {
   gulp.src('src/**/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(concat('all.js'))
-    .pipe(rev())
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
+
+      .pipe(uglify())
+      .pipe(rev())
+      .pipe(concat('built.js', {}))
+
     .pipe(gulp.dest('dist'));
 });
+
