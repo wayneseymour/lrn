@@ -1,15 +1,16 @@
 {
-  "name": "func-programming",
+  "name": "src-maps-lrn",
   "version": "0.0.0",
   "description": "",
-  "main": "splat.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "underscore": "~1.5.2",
-    "lodash": "~2.4.1"
+  "devDependencies": {
+    "gulp": "3.6.2",
+    "gulp-clean": "^0.2.4",
+    "gulp-uglify": "0.3.0"
   }
 }
